@@ -38,3 +38,10 @@ graph file: DPV/chap0/01e.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+f. f(n) = 10*log(n) and g(n) = log(n*n)
+sol: f = Θ(g)
+graph file: DPV/chap0/01f.pdf
+red line: f(n)
+blue line: g(n)
+```
