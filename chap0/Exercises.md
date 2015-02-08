@@ -24,3 +24,10 @@ graph file: DPV/chap0/01c.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+d. f(n) = n*log(n) and g(n) = 10*n*log(10*n)
+sol: f = O(g)
+graph file: DPV/chap0/01d.pdf
+red line: f(n)
+blue line: g(n)
+```
