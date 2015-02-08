@@ -52,3 +52,10 @@ graph file: DPV/chap0/01g.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+h. f(n) = (n^2)/log(n) and g(n) = n*(log(n))^2
+sol: f = Ω(g)
+graph file: DPV/chap0/01h.pdf
+red line: f(n)
+blue line: g(n)
+```
