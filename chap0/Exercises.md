@@ -115,3 +115,10 @@ graph file: DPV/chap0/01p.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+q. f(n) = sigma(i=1,n)(i^k) and g(n) = n^(k+1)
+sol: f = O(g)
+graph file: no graph - let me know if plotted somewhere.
+red line: f(n)
+blue line: g(n)
+```
