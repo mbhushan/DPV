@@ -17,3 +17,10 @@ graph file: DPV/chap0/01b.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+b. f(n) = 100*n + log(n) and g(n) = n + (logn)^2
+sol: f = Ω(g)
+graph file: DPV/chap0/01c.pdf
+red line: f(n)
+blue line: g(n)
+```
