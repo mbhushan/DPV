@@ -59,3 +59,10 @@ graph file: DPV/chap0/01h.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+i. f(n) = n^(0.1) and g(n) = (log(n))^10
+sol: f = O(g)
+graph file: DPV/chap0/01i.pdf
+red line: f(n)
+blue line: g(n)
+```
