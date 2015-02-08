@@ -87,3 +87,10 @@ graph file: DPV/chap0/01l.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+m. f(n) = n*(2^n) and g(n) = 3^n
+sol: f = O(g)
+graph file: DPV/chap0/01m.pdf
+red line: f(n)
+blue line: g(n)
+```
