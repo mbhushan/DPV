@@ -7,7 +7,7 @@ Chapter 0 - Prologue: Solutions
 
 ```py
 a. f(n) = n-100 and g(n) = n-200
-sol: f = Θ(g))
+sol: f = Θ(g)
 graph file: DPV/chap0/01a.pdf
 ```
 ```py
@@ -28,6 +28,13 @@ blue line: g(n)
 d. f(n) = n*log(n) and g(n) = 10*n*log(10*n)
 sol: f = O(g)
 graph file: DPV/chap0/01d.pdf
+red line: f(n)
+blue line: g(n)
+```
+```py
+e. f(n) = log(2*n) and g(n) = log(3*n)
+sol: f = Θ(g)
+graph file: DPV/chap0/01e.pdf
 red line: f(n)
 blue line: g(n)
 ```
