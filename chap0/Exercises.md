@@ -94,3 +94,10 @@ graph file: DPV/chap0/01m.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+n. f(n) = 2^n and g(n) = 2^(n+1)
+sol: f = Θ(g)
+graph file: DPV/chap0/01n.pdf
+red line: f(n)
+blue line: g(n)
+```
