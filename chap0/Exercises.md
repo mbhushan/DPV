@@ -80,3 +80,10 @@ graph file: DPV/chap0/01k.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+l. f(n) = n^(1/2) and g(n) = 5^(log(n))
+sol: f = O(g)
+graph file: DPV/chap0/01l.pdf
+red line: f(n)
+blue line: g(n)
+```
