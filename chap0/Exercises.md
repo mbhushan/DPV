@@ -108,3 +108,10 @@ graph file: DPV/chap0/01o.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+p. f(n) = (log(n))^(log(n)) and g(n) = 2^((log(n))^2)
+sol: f = O(g)
+graph file: DPV/chap0/01p.pdf
+red line: f(n)
+blue line: g(n)
+```
