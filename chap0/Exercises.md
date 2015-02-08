@@ -73,3 +73,10 @@ graph file: DPV/chap0/01j.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+k. f(n) = n^(1/2) and g(n) = (log(n))^3
+sol: f = Ω(g)
+graph file: DPV/chap0/01k.pdf
+red line: f(n)
+blue line: g(n)
+```
