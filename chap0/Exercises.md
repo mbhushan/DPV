@@ -45,3 +45,10 @@ graph file: DPV/chap0/01f.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+g. f(n) = n^(1.01) and g(n) = n*(log(n))^2
+sol: f = O(g)
+graph file: DPV/chap0/01g.pdf
+red line: f(n)
+blue line: g(n)
+```
