@@ -66,3 +66,10 @@ graph file: DPV/chap0/01i.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+j. f(n) = (log(n))^log(n) and g(n) = n/(log(n))
+sol: f = O(g)
+graph file: DPV/chap0/01j.pdf
+red line: f(n)
+blue line: g(n)
+```
