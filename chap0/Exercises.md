@@ -10,3 +10,10 @@ a. f(n) = n-100 and g(n) = n-200
 sol: f = Θ(g))
 graph file: DPV/chap0/01a.pdf
 ```
+```py
+b. f(n) = n^(1/2) and g(n) = n^(2/3)
+sol: f = O(g)
+graph file: DPV/chap0/01b.pdf
+red line: f(n)
+blue line: g(n)
+```
