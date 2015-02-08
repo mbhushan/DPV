@@ -101,3 +101,10 @@ graph file: DPV/chap0/01n.pdf
 red line: f(n)
 blue line: g(n)
 ```
+```py
+o. f(n) = n! and g(n) = 2^n
+sol: f = Ω(g)
+graph file: DPV/chap0/01o.pdf
+red line: f(n)
+blue line: g(n)
+```
