@@ -138,3 +138,27 @@ or the number of terms if the series is unchanging.
 sol: experimental validation is written in sol0_2.py - run it with different values of n 
 and check for yourself.
 ```
+```
+0.3. The Fibonacci numbers F0 , F1 , F2 , . . . , are defined by the rule
+F0 = 0, F1 = 1, Fn = F(n−1) + F(n−2) .
+In this problem we will confirm that this sequence grows exponentially fast and obtain some
+bounds on its growth.
+
+(a) Use induction to prove that Fn ≥ 2^(0.5*n) for n ≥ 6.
+sol a. 
+1. First 6 terms of the fibonacci are: 1, 1, 2, 3, 5, 8
+2. Base case, n=6:
+3. F6 = 8 
+4. 2^(0.5*6) = 2^(3.0) = 8
+5. Hence, base case is true ie F6 >= 2^(0.5*6)
+
+6. Lets assume the equality is true for any k ie Fk >= 2^(0.5*k)
+7. we need to check if it holds for (k+1) as well. Lets check it out.
+8. F(k+1) = Fk + F(k-1)
+9. 2^(0.5*(k+1)) = 2^(0.5*k + 0.5) = 2^(0.5*k) * 2^(0.5) 
+10. Fk + F(k-1) >= 2^(0.5*k) * 2^(0.5) # from 8 and 9
+11. Fk + F(k-1) >= Fk * 2^(0.5) # from 6.
+12. 1 + F(k-1)/Fk >= sqrt(2) # dividing LHS by Fk
+13. Now F(k-1)/Fk is the golden ratio which is equal to ~ 1.61
+14. 1 + 1.61 >= 1.414 # Hence proved!!
+```
