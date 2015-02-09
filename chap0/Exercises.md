@@ -159,6 +159,6 @@ sol a.
 10. Fk + F(k-1) >= 2^(0.5*k) * 2^(0.5) # from 8 and 9
 11. Fk + F(k-1) >= Fk * 2^(0.5) # from 6.
 12. 1 + F(k-1)/Fk >= sqrt(2) # dividing LHS by Fk
-13. Now F(k-1)/Fk is the golden ratio which is equal to ~ 1.61
-14. 1 + 1.61 >= 1.414 # Hence proved!!
+13. Now F(k-1)/Fk is the golden ratio which is equal to ~ 0.61
+14. 1 + 0.61 >= 1.414 # Hence proved!!
 ```
