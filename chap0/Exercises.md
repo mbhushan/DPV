@@ -1,9 +1,11 @@
 Chapter 0 - Prologue: Solutions
 =============================================
 
-##### 0.1. In each of the following situations, indicate whether f = O(g), or f = Ω(g), or both (in which case f = Θ(g)).
+```
+0.1. In each of the following situations, indicate whether f = O(g), or f = Ω(g), or both (in which case f = Θ(g)).
 
 > Graphs are drawn using: http://fooplot.com/
+```
 
 ```py
 a. f(n) = n-100 and g(n) = n-200
@@ -123,11 +125,14 @@ red line: f(n)
 blue line: g(n)
 ```
 
-##### 0.2. Show that, if c is a positive real number, then g(n) = 1 + c + c^2 + · · · + c^n is:
+```
+0.2. Show that, if c is a positive real number, then g(n) = 1 + c + c^2 + · · · + c^n is:
 (a) Θ(1) if c < 1.
 (b) Θ(n) if c = 1.
 (c) Θ(c n ) if c > 1.
 The moral: in big-Θ terms, the sum of a geometric series is simply the first term if the series is
 strictly decreasing, the last term if the series is strictly increasing, or the number of terms if the
 series is unchanging.
-> sol: experimental validation is written in sol0_2.py - run it with different values of n and check for yourself.
+
+sol: experimental validation is written in sol0_2.py - run it with different values of n and check for yourself.
+```
