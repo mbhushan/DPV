@@ -122,3 +122,12 @@ graph file: no graph - let me know if you plotted somewhere.
 red line: f(n)
 blue line: g(n)
 ```
+
+##### 0.2. Show that, if c is a positive real number, then g(n) = 1 + c + c^2 + · · · + c^n is:
+(a) Θ(1) if c < 1.
+(b) Θ(n) if c = 1.
+(c) Θ(c n ) if c > 1.
+The moral: in big-Θ terms, the sum of a geometric series is simply the first term if the series is
+strictly decreasing, the last term if the series is strictly increasing, or the number of terms if the
+series is unchanging.
+> sol: experimental validation is written in sol0_2.py - run it with different values of n and check for yourself.
