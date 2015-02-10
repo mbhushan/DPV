@@ -162,3 +162,13 @@ sol a.
 13. Now F(k-1)/Fk is the golden ratio which is equal to ~ 0.61
 14. 1 + 0.61 >= 1.414 # Hence proved!!
 ```
+```
+(b) Find a constant c < 1 such that Fn ≤ 2^(c*n) for all n ≥ 0. Show that your answer is correct.
+sol b.
+1. Fk + F(k-1) <= Fk * 2^c # from 11 of a. - reversed equality sign
+2. 2^c >= 1 + F(k-1)/Fk
+3. 2^c >= 1 + 0.61 # golden ratio is 0.61
+4. c >= log(1.61) # taking log both sides
+5. c >= 0.69 # log base 2 of 1.61
+refer to the python script ex03b.py for experimental validation
+```
