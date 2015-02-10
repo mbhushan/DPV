@@ -14,7 +14,7 @@ def findfibopoly(num):
         return num
     a = 0
     b = 1
-    for n in range(num):
+    for n in range(num-1):
         f = a + b
         a = b
         b = f
