@@ -126,7 +126,7 @@ red line: f(n)
 blue line: g(n)
 ```
 
-```
+```py
 0.2. Show that, if c is a positive real number, then g(n) = 1 + c + c^2 + · · · + c^n is:
 (a) Θ(1) if c < 1.
 (b) Θ(n) if c = 1.
@@ -138,7 +138,7 @@ or the number of terms if the series is unchanging.
 sol: experimental validation is written in sol0_2.py - run it with different values of n 
 and check for yourself.
 ```
-```
+```py
 0.3. The Fibonacci numbers F0 , F1 , F2 , . . . , are defined by the rule
 F0 = 0, F1 = 1, Fn = F(n−1) + F(n−2) .
 In this problem we will confirm that this sequence grows exponentially fast and obtain some
@@ -162,7 +162,7 @@ sol a.
 13. Now F(k-1)/Fk is the golden ratio which is equal to ~ 0.61
 14. 1 + 0.61 >= 1.414 # Hence proved!!
 ```
-```
+```py
 (b) Find a constant c < 1 such that Fn ≤ 2^(c*n) for all n ≥ 0. Show that your answer is correct.
 sol b.
 1. Fk + F(k-1) <= Fk * 2^c # from 11 of a. - reversed equality sign
@@ -172,7 +172,7 @@ sol b.
 5. c >= 0.69 # log base 2 of 1.61
 refer to the python script ex03b.py for experimental validation
 ```
-```
+```py
 (c) What is the largest c you can find for which Fn = Ω(2^(c*n))?
 sol c. Largest c value for which Fn = Ω(2^(c*n)) is 0.69. Please run the code in ex03b.py 
 with c = 0.69 You will see that post 274th fibonacci Fn is much greater than 2^(c*n)
