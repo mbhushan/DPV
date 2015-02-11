@@ -172,3 +172,8 @@ sol b.
 5. c >= 0.69 # log base 2 of 1.61
 refer to the python script ex03b.py for experimental validation
 ```
+```
+(c) What is the largest c you can find for which Fn = Ω(2^(c*n))?
+sol c. Largest c value for which Fn = Ω(2^(c*n)) is 0.69. Please run the code in ex03b.py 
+with c = 0.69 You will see that post 274th fibonacci Fn is much greater than 2^(c*n)
+```

@@ -28,7 +28,7 @@ def verifyc(c, num):
         fn = round(fn, 2)
         cn = round(cn, 2)
         if fn > cn:
-            dealbreaker.append((fn, cn))
+            dealbreaker.append((n, fn, cn))
         # print ("%d:%0.2f" % (fn, cn))
     print ("Deal Breakers: ", dealbreaker)
     if len(dealbreaker) == 0:
@@ -43,7 +43,9 @@ def main():
     print ("showing c values: ")
     print (clist)
 
-    c = clist[-1]
+    ch = input("based on above c values. enter c: ")
+    c = float(ch)
+    # c = clist[-1]
     print ("Now Lets verify if for c=%0.2f the equation Fn <= 2^(c*n) holds" %
            (c))
     print ("First lets choose \"n\" value")
