@@ -177,3 +177,19 @@ refer to the python script ex03b.py for experimental validation
 sol c. Largest c value for which Fn = Ω(2^(c*n)) is 0.69. Please run the code in ex03b.py 
 with c = 0.69 You will see that post 274th fibonacci Fn is much greater than 2^(c*n)
 ```
+```py
+0.4. Is there a faster way to compute the nth Fibonacci number than by fib2 (page 13)? One idea
+involves matrices. We start by writing the equations F1 = F1 and F2 = F0 + F1 in matrix notation:
+[[F1], [F2]] = [[0,1], [1, 1]] * [[F0], [F1]]
+Similarly,
+[[F2], [F3]] = [[0,1], [1, 1]] * [[F1], [F2]] = [[0,1], [1, 1]]^2 * [[F0], [F1]]
+In general,
+[[Fn], [F(n+1)]] = [[0,1], [1, 1]]^n * [[F0], [F1]]
+So, in order to compute F n , it suffices to raise this 2 × 2 matrix, call it X, to the nth power.
+
+(a) Show that two 2 × 2 matrices can be multiplied using 4 additions and 8 multiplications.
+1. matrix A = [[a, b], [c, d]]
+2. matrix B = [[x, y], [u, v]]
+3. A * B = [[(a*x + b*u), (a*y+ b*v)], [(c*x + d*u), (c*y + d*v)]]
+4. As we can see in step 3. We have 4 additions and 8 multiplications for multiplying two 2x2 matrices.
+```
