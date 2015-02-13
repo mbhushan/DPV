@@ -192,4 +192,22 @@ So, in order to compute F n , it suffices to raise this 2 × 2 matrix, call it X
 2. matrix B = [[x, y], [u, v]]
 3. A * B = [[(a*x + b*u), (a*y+ b*v)], [(c*x + d*u), (c*y + d*v)]]
 4. As we can see in step 3. We have 4 additions and 8 multiplications for multiplying two 2x2 matrices.
+generic matrix multiplication is implemented in matrixmul.py
+```
+```py
+But how many matrix multiplications does it take to compute X^n ?
+(b) Show that O(log(n)) matrix multiplications suffice for computing X^n.(Hint: Think about computing X^8)
+sol: Algorithm is implemented in numpower.py
+Outline is below for computing X^n:
+1. n can be written as power of 2. ie
+n = 2^k1 + 2^k2 + 2^k3 ... + 2^km
+2. So X^n can be expressed as:
+X = X^(2^k1) * X^(2^k2) ... X^(2^km)
+
+eg.
+n = 25 = (11001)
+X^n = X^25 = X^16 * X^8 * X^1
+
+Conclusion: X^n can be determined by looking at each bit in binary representation of n, and multiplying all
+X^(2^ki) together, where ki is the bit position of the ith standing bit.
 ```
