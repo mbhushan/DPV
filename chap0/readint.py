@@ -1,6 +1,6 @@
-def readinput():
+def readinput(X="number"):
     while True:
-        num = input("Enter number: ")
+        num = input("Enter %s: " % (X))
         num = num.strip()
         if not num.isdigit():
             print ("Bad Input. Please try again..")
