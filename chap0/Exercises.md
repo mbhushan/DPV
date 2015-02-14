@@ -225,4 +225,9 @@ sol: You can validate this experimentally from fib_matrix.py
 (d) Let M(n) be the running time of an algorithm for multiplying n-bit numbers, and assume
 that M(n) = O(n^2) (the school method for multiplication, recalled in Chapter 1, achieves
 this). Prove that the running time of fib3 is O(M(n)logn).
+sol: 
+1. [[Fn], [F(n+1)]] = [[0,1], [1, 1]]^n * [[F0], [F1]]
+2. In above expression [[0,1], [1,1]]^n can be achieved in O(log(n)) - derived from 0.4 above
+now at each of O(log(n)) steps the multiplication cost is O(n^2).
+Hence, the total cost ie running time complexity is: O((n^2) * log(n))
 ```
