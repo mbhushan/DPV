@@ -211,3 +211,12 @@ X^n = X^25 = X^16 * X^8 * X^1
 Conclusion: X^n can be determined by looking at each bit in binary representation of n, and multiplying all
 X^(2^ki) together, where ki is the bit position of the ith standing bit.
 ```
+```py
+Thus the number of arithmetic operations needed by our matrix-based algorithm, call it fib3, is
+just O(log n), as compared to O(n) for fib2. Have we broken another exponential barrier?
+The catch is that our new algorithm involves multiplication, not just addition; and multiplications 
+of large numbers are slower than additions. We have already seen that, when the complexity 
+of arithmetic operations is taken into account, the running time of fib2 becomes O(n^2).
+
+(c) Show that all intermediate results of fib3 are O(n) bits long.
+```
