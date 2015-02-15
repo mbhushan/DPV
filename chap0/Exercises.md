@@ -252,4 +252,6 @@ compute F n . The problem is that these numbers are irrational, and computing th
 accuracy is nontrivial. In fact, our matrix method fib3 can be seen as a roundabout way of
 raising these irrational numbers to the nth power. If you know your linear algebra, you should
 see why. (Hint: What are the eigenvalues of the matrix X?)
+
+** implementation for fibonacci calculation using the above formula is done in fib_formula.py
 ```
