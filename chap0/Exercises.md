@@ -231,3 +231,7 @@ sol:
 now at each of O(log(n)) steps the multiplication cost is O(n^2).
 Hence, the total cost ie running time complexity is: O((n^2) * log(n))
 ```
+```py
+(e) Can you prove that the running time of fib3 is O(M(n))? (Hint: The lengths of the numbers being 
+multiplied get doubled with every squaring.)
+```
