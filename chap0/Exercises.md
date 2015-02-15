@@ -234,4 +234,22 @@ Hence, the total cost ie running time complexity is: O((n^2) * log(n))
 ```py
 (e) Can you prove that the running time of fib3 is O(M(n))? (Hint: The lengths of the numbers being 
 multiplied get doubled with every squaring.)
+sol: 
+Not very clear here.
+1. There are log(n) multiplications
+2. each multiplication has cost of n^2
+3. So total cost: O(n^2 * log(n))
+```
+```py
+Conclusion:
+In conclusion, whether fib3 is faster than fib2 depends on whether we can multiply n-bit
+integers faster than O(n 2 ). Do you think this is possible? (The answer is in Chapter 2.)
+Finally, there is a formula for the Fibonacci numbers:
+Fn = 1/sqrt(5)((1 + sqrt(5))/2)^n - 1/sqrt(5)((1 - sqrt(5))/2)^n
+
+So, it would appear that we only need to raise a couple of numbers to the nth power in order to
+compute F n . The problem is that these numbers are irrational, and computing them to sufficient
+accuracy is nontrivial. In fact, our matrix method fib3 can be seen as a roundabout way of
+raising these irrational numbers to the nth power. If you know your linear algebra, you should
+see why. (Hint: What are the eigenvalues of the matrix X?)
 ```
