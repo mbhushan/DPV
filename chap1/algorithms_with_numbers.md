@@ -28,3 +28,17 @@ is stored modulo 2^n . Negative numbers −x therefore end up as 2^n − x. Arit
 like addition and subtraction can be performed directly in this format, ignoring any overflow
 bits that arise.
 ```
+```py
+Modular division theorem For any a mod N , a has a multiplicative inverse modulo N if
+and only if it is relatively prime to N . When this inverse exists, it can be found in time O(n^3)
+(where as usual n denotes the number of bits of N ) by running the extended Euclid algorithm.
+This resolves the issue of modular division: when working modulo N , we can divide by
+numbers relatively prime to N —and only by these. And to actually carry out the division, we
+multiply by the inverse.
+```
+```py
+Modern cryptography is about the following important idea: 
+factoring is hard and primality is easy. We cannot factor large numbers,
+but we can easily test huge numbers for primality! (Presumably, if a number is composite,
+such a test will detect this without finding a factor.)
+```
