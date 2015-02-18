@@ -14,6 +14,7 @@ def modular_exp(x, y, N):
 
 
 def main():
+    print ("X^Y % N")
     x = readinput("X")
     y = readinput("Y")
     N = readinput("N")
