@@ -42,3 +42,16 @@ factoring is hard and primality is easy. We cannot factor large numbers,
 but we can easily test huge numbers for primality! (Presumably, if a number is composite,
 such a test will detect this without finding a factor.)
 ```
+```py
+The problem is that Fermat’s theorem is not an if-and-only-if condition; it doesn’t say what
+happens when N is not prime.
+It turns out that certain extremely rare composite numbers N , called Carmichael numbers, 
+pass Fermat’s test for all a relatively prime to N . On such numbers our algorithm will
+fail; but they are pathologically rare.
+```
+```py
+Carmichael Numbers:
+We are ignoring Carmichael numbers, so we can now assert
+If N is prime, then a^(N−1) ≡ 1 mod N for all a < N .
+If N is not prime, then a^(N−1) ≡ 1 mod N for at most half the values of a < N .
+```
