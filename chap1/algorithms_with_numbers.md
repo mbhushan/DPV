@@ -55,3 +55,11 @@ We are ignoring Carmichael numbers, so we can now assert
 If N is prime, then a^(N−1) ≡ 1 mod N for all a < N .
 If N is not prime, then a^(N−1) ≡ 1 mod N for at most half the values of a < N .
 ```
+```py
+a random n-bit number has roughly a one-in-n chance of being prime (actually about 1/(ln(2^n)) ≈ 1.44/n). For instance,
+about 1 in 20 social security numbers is prime!
+
+Lagrange’s prime number theorem: Let π(x) be the number of primes ≤ x . 
+Then π(x) ≈ x/(ln x) , or more precisely,
+lim(x→∞) (π(x) / (x/lnx)) = 1
+```
