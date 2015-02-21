@@ -63,3 +63,16 @@ Lagrange’s prime number theorem: Let π(x) be the number of primes ≤ x .
 Then π(x) ≈ x/(ln x) , or more precisely,
 lim(x→∞) (π(x) / (x/lnx)) = 1
 ```
+```py
+RSA:
+Bob chooses his public and secret keys.
+• He starts by picking two large (n-bit) random primes p and q.
+• His public key is (N, e) where N = pq and e is a 2n-bit number relatively prime to
+(p − 1)(q − 1). A common choice is e = 3 because it permits fast encoding.
+• His secret key is d, the inverse of e modulo (p − 1)(q − 1), computed using the extended
+Euclid algorithm.
+Alice wishes to send message x to Bob.
+• She looks up his public key (N, e) and sends him y = (x^e mod N ), computed using an
+efficient modular exponentiation algorithm.
+• He decodes the message by computing y^d mod N .
+```
