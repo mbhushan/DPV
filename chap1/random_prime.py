@@ -3,9 +3,9 @@ from little_fermat import isprime
 import random
 
 
-def random_prime(num):
+def random_prime(num, y=2):
     while True:
-        n = random.randint(2, num)
+        n = random.randint(y, num)
         if isprime(n):
             return n
 
