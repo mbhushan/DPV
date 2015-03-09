@@ -9,7 +9,7 @@ def inverse_modulo(x, n):
         a, b = b, a
     result = gcd(a, b)
     if result != 1:
-        print ("As gcd(%d, %d) != 1, the inverse does not exists" % (x, n))
+        # print ("As gcd(%d, %d) != 1, the inverse does not exists" % (x, n))
         return None
 
     ans = extended_euclid(x, n)
