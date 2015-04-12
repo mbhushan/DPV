@@ -1,5 +1,5 @@
-Algorithms - S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani
-===================================================================
+Solution Manual for Algorithms - S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani
+======================================================================================
 
 ##### Motivation:
 * Take notes from the chapters.
