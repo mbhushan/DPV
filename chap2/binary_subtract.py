@@ -34,9 +34,10 @@ def bin_subtract(x, y):
         x = z + x
     print "X: ", x
     print "Y: ", y
-    print "Y 2 complement: ", two_complement(y)
-    # result = []
-    # carry = 0
+    yc = two_complement(y)
+    print "Y 2 complement: ", yc
+    result = binsum(x, yc)
+    print "result: ", result
 
 
 def main():
