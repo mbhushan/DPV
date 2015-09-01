@@ -36,8 +36,8 @@ def binsum(x, y):
         y = z + y
     elif ylen > xlen:
         x = z + x
-    print "x: ", x
-    print "y: ", y
+    # print "X: ", x
+    # print "Y: ", y
     result = []
     carry = 0
     for i in range(xlen-1, -1, -1):
