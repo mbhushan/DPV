@@ -27,26 +27,28 @@ def bin_subtract(x, y):
     ylen = len(y)
     diff = abs(xlen - ylen)
     z = "0" * diff
-    print "Z: ", z
+    # print "Z: ", z
     if xlen > ylen:
         y = z + y
     elif xlen < ylen:
         x = z + x
-    print "X: ", x
-    print "Y: ", y
+    # print "X: ", x
+    # print "Y: ", y
     yc = two_complement(y)
-    print "Y 2 complement: ", yc
+    # print "Y 2 complement: ", yc
     result = binsum(x, yc)
-    print "result: ", result
+    result = result[1:]
+    result = result.lstrip("0")
+    # print "result: ", result
+    return result
 
 
 def main():
     x = readinput("X")
     y = readinput("Y")
     # print "Y 2 complement: ", two_complement(y)
-    bin_subtract(x, y)
-    # result = bin_subract(x, y)
-    # print "X - Y = ", result
+    result = bin_subtract(x, y)
+    print "X - Y = ", result
 
 
 if __name__ == '__main__':
