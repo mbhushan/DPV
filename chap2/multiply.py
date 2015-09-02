@@ -19,8 +19,10 @@ def multiply(x, y):
     P1 = multiply(xL, yL)
     P2 = multiply(xR, yR)
     P3 = multiply(binsum(xL, xR), binsum(yL, yR))
-
+    # print "P1, P2, P3: ", P1, P2, P3
     P4 = binsum(P1, P2)
+    print "P1, P2, P3, P4: ", P1, P2, P3, P4
+    print "n, m: ", n, m
     a = P1 + ("0" * n)
     b = bin_subtract(P3, P4)
     b = b + ("0" * m)
